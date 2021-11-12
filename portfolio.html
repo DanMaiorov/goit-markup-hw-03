@@ -11,10 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
+      <div class="container">
       <nav class="header-navigation">
         <a href="" class="header-logo link" lang="en"
           >Web<span class="accent">Studio</span></a
@@ -33,13 +38,15 @@
         </li>
         <li class="header-item"><a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
 
     <main>
       <section class="portfolio-category">
+        <div class="container">
         <h1 class="section-title" hidden>Примеры работ</h1>
         <!-- Кнопки выбора -->
-        <ul class="link list">
+        <ul class="portfolio-btn link list">
           <li><button type="button" class="current-button">Все</button></li>
           <li>
             <button type="button" class="filter-button">Веб-сайты</button>
@@ -53,14 +60,14 @@
           </li>
         </ul>
         <!-- Примеры работ -->
-        <ul class="examples-list list">
+        <ul class="examples-list list">          
           <li>
-            <img src="./images/techno.jpg" alt="Ноутбук" width="370" />
+            <img class="examples-img" src="./images/techno.jpg" alt="Ноутбук" width="370" />
             <h2 class="title">Технокряк</h2>
             <p class="text">Веб-сайт</p>
           </li>
           <li>
-            <img
+            <img class="examples-img"
               src="./images/new-orlean-vs-golden-star.jpg"
               alt="<Баскетболисты>"
               width="370"
@@ -71,7 +78,7 @@
             <p class="text">Дизайн</p>
           </li>
           <li>
-            <img
+            <img class="examples-img"
               src="./images/seafood.jpg"
               alt="Логотип Ресторана Seafood"
               width="370"
@@ -80,7 +87,7 @@
             <p class="text">Приложение</p>
           </li>
           <li>
-            <img
+            <img class="examples-img"
               src="./images/prime-earphones.jpg"
               alt="Наушники"
               width="370"
@@ -89,12 +96,12 @@
             <p class="text">Маркетинг</p>
           </li>
           <li>
-            <img src="./images/boxes.jpg" alt="Коробочки" width="370" />
+            <img class="examples-img" src="./images/boxes.jpg" alt="Коробочки" width="370" />
             <h2 class="title">Проект <span lang="en">Boxes</span></h2>
             <p class="text">Приложение</p>
           </li>
           <li>
-            <img
+            <img class="examples-img"
               src="./images/inspiration-no-borders.jpg"
               alt="Монитор"
               width="370"
@@ -103,7 +110,7 @@
             <p class="text">Веб-сайт</p>
           </li>
           <li>
-            <img
+            <img class="examples-img"
               src="./images/limited-edition-magazine.jpg"
               alt="Журнал"
               width="370"
@@ -114,12 +121,12 @@
             <p class="text">Дизайн</p>
           </li>
           <li>
-            <img src="./images/lab-parcel.jpg" alt="<Бирка>" width="370" />
+            <img class="examples-img" src="./images/lab-parcel.jpg" alt="<Бирка>" width="370" />
             <h2 class="title">Проект <span lang="en">LAB</span></h2>
             <p class="text">Маркетинг</p>
           </li>
           <li>
-            <img
+            <img class="examples-img"
               src="./images/growing-business-notebook.jpg"
               alt="Ноутбук"
               width="370"
@@ -128,10 +135,12 @@
             <p class="text">Приложение</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="container">
       <a href="" lang="en" class="footer-logo link">
         Web<span class="accent-footer">Studio</span>
       </a>
@@ -155,6 +164,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
