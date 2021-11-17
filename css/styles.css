@@ -142,7 +142,7 @@ body {
 .header-tel:hover,
 .header-mail:focus,
 .header-tel:focus,
-.header-link.current,
+.current,
 .header-logo .accent:hover,
 .header-logo .accent-footer:hover,
 .footer-logo .accent:hover,
@@ -152,14 +152,13 @@ body {
 .footer-tel:focus,
 .footer-tel:hover,
 .footer-address:hover,
-.footer-address:focus,
-.current-button:hover,
-.current-button:focus {
+.footer-address:focus {
   color: var(--accent-color);
 }
 
 .header-mail,
 .header-tel {
+  display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -276,11 +275,13 @@ body {
   justify-content: space-between;
 }
 
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .work-image {
   display: block;
-
-  height: auto;
-  margin-right: 30px;
+  height: auto;  
 }
 
 /* team */
@@ -292,8 +293,7 @@ body {
 }
 
 .team-list {
-  display: flex;
-  
+  display: flex;  
 }
 
 .team-title {
@@ -301,12 +301,13 @@ padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-list .name {
+.team-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-image {
@@ -315,7 +316,7 @@ padding-top: 30px;
   height: auto;  
 }
 
-.job {
+.team-job {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;  
